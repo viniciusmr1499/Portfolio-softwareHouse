@@ -1,15 +1,20 @@
 /* INICIO DE SEÇÃO SOBRE NOS */
+html{
+    scroll-behavior: smooth;
+}
 
 #main{
     margin:4rem auto;
 }
 
-#main .about{
+#about{
     padding:1.5rem;
-    margin-bottom:2em;
+    width:95%;
+    margin: 0 auto 2em auto;
+    display:block; 
 }
 
-#main .about__title{
+#about .about__title{
     font-family: 'Open Sans Condensed', sans-serif; 
     /* font-family: 'Slabo 27px', serif; */
     text-transform:uppercase;
@@ -19,7 +24,7 @@
     margin-bottom:20px;
 }
 
-#main .about__text{
+#about .about__text{
     font-family: 'Open Sans Condensed', sans-serif; 
     font-size:1.4rem;
     text-align: justify;
@@ -28,21 +33,35 @@
     color:#000;
 }
 
-#main .about__text strong{
+#about .img-fluid{
+    box-shadow:2px 0 10px black;
+    transition:.2s;
+}
+
+#about .about__text strong{
     font-weight: bold;
     font-size:1.3rem;
 }
 
-#main .img-fluid{
-    /* box-shadow:5px 5px 20px rgba(0,0,0,0.6);
-    border-radius:2px; */
+.anime{
+    transform:translate3d(-100px,0,0);
+    transition:.3s;
+    opacity:0;
 }
+
+.anime__start{
+    opacity:1;
+    transform:translate3d(0,0,0);
+}
+
+
+
 
 /* FIM DE SEÇÃO SOBRE NOS */
 /* ---------------------------------------------- */
 
 /* SEÇAÕ SERVICOS */
-#main .services{
+ #services{
     /* #34dbd3 #0f475a*/
     background:linear-gradient(to left, rgba(0,0,0,1),#0f475a,#0f475a,rgba(0,0,0,1));
     /* background:linear-gradient(to left,#000,rgba(0,0,0,0.8),rgba(0,0,0,0.8),#000); */
@@ -52,13 +71,13 @@
     padding-top:1.4em;
 }
 
-#main .services .content{
+#services .content{
     position:relative;
     padding:0 4em;
     height: 300px;
 }
 
-#main .services__title{
+#services .services__title{
     /* font-family: 'Open Sans Condensed', sans-serif;  */
     font-family: 'Roboto Condensed', sans-serif;
     font-size:1.4rem;
@@ -70,13 +89,13 @@
     padding:1.5rem 0;
 }
 
-#main .services_content{
+#services .services_content{
     position:relative;
     transform:translate(17%,30%);
     margin:0 8px;
 }
 
-#main .services__subtitle{
+#services .services__subtitle{
     margin-bottom:0.6rem;
     font-size:1.4rem;
     color:#fff;
@@ -85,11 +104,11 @@
     font-weight:bold;
 }
 
-#main .content__text{
+#services .content__text{
     width:380px;
 }
 
-#main .services__text{
+#services .services__text{
     color:#eee;
     line-height:1.3rem;
     font-family:'Open Sans Condensed', sans-serif; 
@@ -97,7 +116,7 @@
     font-weight: 600;
 }
 
-#main span.services__icon{
+#services span.services__icon{
     position: absolute;
     top:15%;
     height:70px;
@@ -110,26 +129,26 @@
     text-align:center;
 }
 
-#main span.services__icon .fas.fa-tools{
+#services span.services__icon .fas.fa-tools{
     color:#aaa;
     font-size:1.8rem;
     line-height: 1px;
 }
 
-#main span.services__icon .fab.fa-ups{
+#services span.services__icon .fab.fa-ups{
     color:#aaa;
     font-size:1.8rem;
     line-height: 1px;
 }
 
 
-#main span.services__icon .far.fa-images{
+#services span.services__icon .far.fa-images{
     color:#aaa;
     font-size:1.8rem;
     line-height: 1px;
 }
 
-#main span.services__icon .fas.fa-paint-roller{
+#services span.services__icon .fas.fa-paint-roller{
     color:#aaa;
     font-size:1.8rem;
     line-height: 1px;
@@ -178,13 +197,13 @@
 
 /* INICIO DE SEÇÃO PROJETOS */
 
-#main .projects{
+#projects{
     display:block;
     width:95%;
     margin:2.5em auto 0 auto;
 }
 
-#main .projects__title{
+#projects .projects__title{
     font-size:1.4rem;
     font-family: 'Roboto Condensed', sans-serif;
     color:#000;
@@ -193,17 +212,17 @@
     margin-bottom:2em;
 }
 
-#main figure{
+#projects figure{
     position:relative;
     overflow: hidden;
 }
 
-#main figure:hover a{
+#projects figure:hover a{
     opacity: 1;
     bottom:40%;
 }
 
-#main figure a{
+#projects figure a{
     text-decoration:none;
     text-align:center;
     text-transform:uppercase;
@@ -215,7 +234,7 @@
     opacity:0;
 }
 
-#main figure h3{
+#projects figure h3{
     margin:6px 0;
     color:#fff;
     font-weight: 700;
@@ -223,13 +242,13 @@
     font-size:1rem;
 }
 
-#main figure p{
+#projects figure p{
     font-family: 'Open Sans Condensed', sans-serif;
     font-size: 0.8rem;
     margin-top:5px;
 }
 
-#main figure .overlay{
+#projects figure .overlay{
     background:linear-gradient(120deg,#0f475a,#3498db );
     position:absolute;
     left:0;
@@ -241,13 +260,11 @@
     opacity:.8;
 }
 
-#main figure:hover .overlay{
+#projects figure:hover .overlay{
     top:0;
 }
 
-
-
-#main .overlay,#main a{
+#projects .overlay,#main a{
     transition:.3s;
 }
 

@@ -16,7 +16,7 @@
 
     <header id="header">
         <nav class="navbar navbar-expand-lg navbar-light container">
-            <a href="#" class="navbar-brand">LOGO</a>
+            <a href="index.html" class="navbar-brand">LOGO</a>
 
             <button class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="expanded">
                 <span class="navbar-toggler-icon"></span>
@@ -24,10 +24,10 @@
 
             <div class="collapse navbar-collapse" id="menu">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-thumbs-up"></i> Sobre</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-award"></i> Portfólio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-mobile-alt"></i> Contato</a></li>
+                    <li class="nav-item"><a href="#header" class="nav-link"><i class="fas fa-home"></i> Inicio</a></li>
+                    <li class="nav-item"><a href="#about" class="nav-link"><i class="fas fa-thumbs-up"></i> Sobre</a></li>
+                    <li class="nav-item"><a href="#projects" class="nav-link"><i class="fas fa-award"></i> Portfólio</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link"><i class="fas fa-mobile-alt"></i> Contato</a></li>
                 </ul>
             </div>
         </nav>
@@ -38,10 +38,11 @@
     </header>
 
     <main id="main">
-        <section class="about">
+        <section id="about" class="anime">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4">
+                        <!-- <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="img-about" class="img-fluid"> -->
                         <img src="https://images.pexels.com/photos/66134/pexels-photo-66134.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="about" class="img-fluid">
                     </div>
                     <div class="col-md-8 mt-3 pl-4">
@@ -54,7 +55,7 @@
             </div>
         </section>
 
-        <section class="services">
+        <section id="services" class="anime">
             <h1 class="services__title text-center">Serviços</h1>
             <div class="container">
                 <div class="row content">
@@ -119,7 +120,7 @@
             </div>
         </section>
                  
-        <section class="clients p-4">
+        <section class="clients anime p-4">
             <div class="row">
                 <div class="col-12">
                     <h1 class="clients__title">Clientes</h1>
@@ -155,7 +156,7 @@
             </div>
         </section>
 
-        <section class="projects">
+        <section id="projects" class="anime">
             <div class="row">
                 <div class="col-12">
                     <h1 class="projects__title ">Projetos</h1>
@@ -187,6 +188,7 @@
                                 </figcaption>
                             </figure>
                         </div>
+                        
                         <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 mb-4">
                             <figure>
                                 <img src="./public/img/amostragem.PNG" alt="img" class="img-fluid">
@@ -227,25 +229,23 @@
                         </div>
 
                         <div class="col-sm-4 col-md-4 col-lg-4 col-xl-4 mb-4">
-                                <figure>
-                                    <img src="./public/img/STinturaria.jpeg" alt="img" class="img-fluid">
-                                    <figcaption>
-                                        <a href="https://viniciusmr1499.github.io/Portfolio/">
-                                            <h3>Portfólio - Marcos Vinicius</h3>
-                                            <p>Tem por finalidade mostrar um pouco de meu trabalho.</p>
-                                        </a>
-                                        <div class="overlay"></div>
-                                    </figcaption>
-                                </figure>
-                            </div>
-
-
+                            <figure>
+                                <img src="./public/img/STinturaria.jpeg" alt="img" class="img-fluid">
+                                <figcaption>
+                                    <a href="https://viniciusmr1499.github.io/Portfolio/">
+                                        <h3>Portfólio - Marcos Vinicius</h3>
+                                        <p>Tem por finalidade mostrar um pouco de meu trabalho.</p>
+                                    </a>
+                                    <div class="overlay"></div>
+                                </figcaption>
+                            </figure>
+                        </div>
                     </div>
                 </div>
             </div>  
         </section>
 
-        <section class="developers">
+        <section class="developers anime">
             <div class="row">
                 <div class="col-12">
                     <h1 class="developers__title">Equipe de desenvolvedores</h1>
@@ -294,6 +294,10 @@
             </div>
         </section>
 
+        <section id="contact" class="anime">
+
+        </section>
+
     </main>
 
     <footer id="footer">
@@ -305,8 +309,11 @@
         </div>
     </footer>
 
+    
+
     <script src="./public/js/jquery-3.4.1.min.js"></script>
     <script src="./public/js/popper.js"></script>
     <script src="./public/js/bootstrap.min.js"></script>
+    <script src="public/js/fadeIn.js"></script>
 </body>
 </html>

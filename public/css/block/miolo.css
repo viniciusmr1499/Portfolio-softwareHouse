@@ -1,9 +1,5 @@
 
-
-
 /* MEDIAS QUERYS */
-
-
 
 #header{
     position:relative;
@@ -30,13 +26,13 @@
     color:#34dbd3;
 }
 
-#header .navbar-brand:hover{
-    transform:translateX(10px);
+#header .navbar-brand:focus{
+    transform:scale3d(1.2,1.2,1);
 }
 
 #header .navbar-brand{
     color:transparent;
-    background: url('../../img/Logo─SoftHouse.svg');
+    background: url('../../img/logo.svg');
     background-repeat: no-repeat;
     background-size:contain;
     width:60px;
@@ -45,17 +41,11 @@
     border-radius:10px;
 }
 
-#header .navbar-toggler:hover{
-    border:2px solid #34dbd3;
-    transform:skewX(8px);
-}
-
 #header .navbar-toggler{
     transition:.25s;
-    background:#fff;
+    background:#bbd8d7;
     outline:none;
     cursor:pointer;
-    color:#fff;
 }
 
 #header .miolo__text{
